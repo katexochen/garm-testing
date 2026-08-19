@@ -1,0 +1,7 @@
+name: test
+on: [push, workflow_dispatch]
+jobs:
+  test:
+    runs-on: incus
+    steps:
+      - run: echo it works && hostname && cat /etc/os-release
